@@ -1,8 +1,8 @@
 angular.module('video-player')
 .component('app', {
   controller: function(youTube) {
-    this.videos = exampleVideoData;
-    this.video = this.videos[0];
+    this.videos = [];
+    this.video = null;
     this.handleclick = (video) => {
       this.video = video;
     };
@@ -13,6 +13,7 @@ angular.module('video-player')
         this.video = this.videos[0];
       });
     };
+    this.handlesearch('cats');
   },
   
 

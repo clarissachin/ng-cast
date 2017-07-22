@@ -4,9 +4,5 @@ angular.module('video-player')
     handlesearch: '<'
   },
 
-  controller: function() {
-    
-  }, 
-
   templateUrl: 'src/templates/search.html' 
 });

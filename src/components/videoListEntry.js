@@ -4,10 +4,6 @@ angular.module('video-player')
     video: '<',
     handleclick: '<'
   },
-
-  controller: function() {
-    this.name = 'kevin';
-  },
   
   templateUrl: 'src/templates/videoListEntry.html'
 });

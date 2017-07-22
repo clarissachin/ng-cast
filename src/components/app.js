@@ -6,7 +6,6 @@ angular.module('video-player')
     this.handleclick = (video) => {
       this.video = video;
     };
-    this.cb = () => (console.log('got result'));
     this.handlesearch = (query) => {
       youTube.search(query, (results) => {
         this.videos = results.data.items;
@@ -15,7 +14,6 @@ angular.module('video-player')
     };
     this.handlesearch('cats');
   },
-  
 
   templateUrl: 'src/templates/app.html'
 });

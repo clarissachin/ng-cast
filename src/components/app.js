@@ -12,6 +12,7 @@ angular.module('video-player')
         this.video = this.videos[0];
       });
     };
+    this.livesearch = _.debounce(this.handlesearch, 500);
     this.handlesearch('cats');
   },
 

@@ -1,8 +1,9 @@
 angular.module('video-player')
 .component('search', {
   bindings: {
-    handlesearch: '<'
+    handlesearch: '<',
+    livesearch: '<'
   },
 
-  templateUrl: 'src/templates/search.html' 
+  templateUrl: 'src/templates/search.html'
 });
